@@ -12,7 +12,7 @@ def custom_sort_key(word):
             return ukr_lower[lower_char]
         elif lower_char in eng_lower:
             return eng_lower[lower_char]
-        return float('inf')  # Невідомий символ
+        return float('inf')
 
     return [get_char_value(c) for c in word]
 
